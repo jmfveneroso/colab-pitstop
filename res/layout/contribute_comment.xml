@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res-auto/com.sumbioun.android.pitstop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:gravity="center"
+    android:background="@drawable/asphalt_small" 
+    android:descendantFocusability="beforeDescendants"
+	android:focusableInTouchMode="true">
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+       	android:paddingTop="10dp"
+       	android:paddingRight="70dp"
+       	android:paddingLeft="70dp"
+       	android:gravity="center"  
+    	android:text="@string/contribute_comment_hint1" 
+    	android:textSize="12sp"
+    	android:textColor="@color/opaque_yellow"
+    	cfont:cust_font="SourceSansPro_Bold"/>
+				 
+    <ScrollView
+        android:layout_width="266dp"
+        android:layout_height="133dp"
+        android:gravity="center"
+        android:background="@drawable/comment_box">
+        
+	    <EditText
+	        android:id="@+id/contribute_comment_comment_box"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" 
+	        android:background="@android:color/transparent" 
+	        android:padding="5dp"
+	        android:hint="@string/contribute_comment_hint2"
+	    	android:textSize="12sp"
+	    	android:textColor="@color/opaque_white"/>
+	    
+    </ScrollView>
+	    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+       	android:paddingTop="20dp"
+       	android:gravity="center"  
+    	android:text="@string/contribute_comment_hint3" 
+    	android:textSize="12sp"
+    	android:textColor="@color/opaque_yellow"
+    	cfont:cust_font="SourceSansPro_Semibold"/>
+	    
+    <com.sumbioun.android.pitstop.customwidgets.StarGroup
+	    android:id="@+id/contribute_comment_average_rating"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:gravity="center"
+	    android:paddingTop="5dp" 
+	    cfont:star_editable="false"/>
+	
+    <RelativeLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:paddingTop="20dp"
+    	android:paddingRight="70dp" 
+        android:paddingLeft="70dp">
+	        
+    	<com.sumbioun.android.pitstop.customwidgets.CustTextView
+    	    android:id="@+id/contribute_comment_box"
+	  	    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+	       	android:layout_centerHorizontal="true"  
+	       	android:gravity="center"
+	       	android:drawableTop="@drawable/main_comment"
+	       	android:text="@string/contribute_comment_submit"
+	       	android:textSize="12sp"      	
+	       	android:textColor="@color/opaque_yellow"  
+		    cfont:cust_font="SourceSansPro_Semibold"/>  
+    
+    	<!--  <com.sumbioun.android.pitstop.customwidgets.CustTextView
+    	    android:id="@+id/contribute_comment_skip"
+	  	    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true" 
+		    android:gravity="center"
+		    android:drawableTop="@drawable/skip"
+	       	android:text="@string/skip"
+	       	android:textSize="10dp"      	
+	       	android:textColor="@color/opaque_yellow"  
+		    cfont:cust_font="SourceSansPro_Semibold"/>  -->
+		   	    
+    </RelativeLayout>
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+        android:id="@+id/contribute_comment_address"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"  
+	    android:paddingTop="10dp" 
+	 	android:textSize="12sp"
+	 	android:textColor="@color/opaque_white"
+	 	android:gravity="center" 
+	 	cfont:cust_font="SourceSansPro_Semibold"/>
+    
+</LinearLayout>

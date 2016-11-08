@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    
+
+	    <com.sumbioun.android.pitstop.customwidgets.CustTextView 
+		    android:id="@+id/contribute_extra_list_item_single_checkbox_title"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content" 
+		    android:layout_centerVertical="true"
+		    android:paddingLeft="10dp"
+		    android:textSize="14dp"      	
+		    android:textColor="@color/opaque_white"  
+		    cfont:cust_font="SourceSansPro_Black"/>
+    
+ 
+    <CheckBox
+        android:id="@+id/contribute_extra_list_item_single_checkbox_checkbox"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:paddingRight="5dp"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background_concrete">
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+  	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="25dp"
+	    android:paddingLeft="25dp"
+		android:paddingRight="25dp" 
+       	android:gravity="center"  
+       	android:text="@string/garage_refuellings_help" 
+       	android:textSize="13sp"      	
+       	android:textColor="#ff000000"  
+	    cfont:cust_font="SourceSansPro_Semibold"/>
+    
+    <LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:orientation="vertical"
+		android:gravity="center" 
+		android:paddingTop="100dp"
+	    android:paddingBottom="10dp"
+	    android:paddingLeft="25dp"
+		android:paddingRight="25dp" 
+		android:contentDescription="@string/no_description" > 
+			
+	    <ImageView
+			android:src="@drawable/line_horizontal_cropped_black"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center" 
+			android:paddingBottom="5dp"
+			android:contentDescription="@string/no_description" /> 
+			
+		<ImageView
+			android:src="@drawable/line_horizontal_cropped_black"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center" 
+			android:contentDescription="@string/no_description" /> 
+		    
+	    <ListView
+			android:id="@+id/garage_refuellings_list"
+			android:layout_width="fill_parent"
+			android:layout_height="215dp" 
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp" 
+			android:gravity="center"
+			android:divider="@drawable/line_horizontal_cropped_black" />
+	    
+	    <ImageView
+			android:src="@drawable/line_horizontal_cropped_black"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center" 
+			android:contentDescription="@string/no_description" /> 
+			
+	    <ImageView
+			android:src="@drawable/line_horizontal_cropped_black"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center" 
+			android:paddingTop="5dp"
+			android:contentDescription="@string/no_description" /> 
+			
+	</LinearLayout>
+    
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:paddingBottom="30dp"
+	    android:orientation="vertical"
+	    android:gravity="center">
+			
+	  	<com.sumbioun.android.pitstop.customwidgets.CustTextView
+	  	    android:id="@+id/garage_refuellings_add_refuelling"
+	  	    android:layout_width="85dp"
+		    android:layout_height="wrap_content"
+        	android:gravity="center"  
+		    android:drawableTop="@drawable/personal_fuel"
+        	android:text="@string/garage_refuellings_new_entry" 
+        	android:textSize="13sp"      	
+        	android:textColor="#ff000000"  
+		    cfont:cust_font="SourceSansPro_Semibold"/>
+    
+    </LinearLayout>
+    
+</RelativeLayout>

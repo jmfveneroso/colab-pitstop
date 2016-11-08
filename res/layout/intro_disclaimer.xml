@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res-auto/com.sumbioun.android.pitstop"
+    android:id="@+id/intro_disclaimer_body"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/asphalt_small" >
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+       	android:paddingTop="20dp"
+       	android:paddingRight="70dp"
+       	android:paddingLeft="70dp"
+       	android:gravity="center" 
+    	android:drawableTop="@drawable/pitstop_yellow"  
+    	android:text="@string/introduction_text_help" 
+    	android:textSize="12sp"
+    	android:textColor="@color/opaque_yellow"
+    	cfont:cust_font="SourceSansPro_Semibold"/>
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+       	android:paddingTop="20dp"
+       	android:paddingRight="30dp"
+       	android:paddingLeft="30dp"
+       	android:gravity="center" 
+    	android:text="@string/introduction_text_intention" 
+    	android:textSize="12sp"
+    	android:textColor="@color/opaque_white"
+    	cfont:cust_font="SourceSansPro_Semibold"/>
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+       	android:paddingTop="20dp"  
+       	android:paddingRight="35dp"
+       	android:paddingLeft="35dp"
+       	android:gravity="center" 
+    	android:text="@string/introduction_text_contribute" 
+    	android:textSize="16sp"
+    	android:textColor="@color/opaque_white"
+    	cfont:cust_font="SourceSansPro_Bold"/>
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+        android:id="@+id/contribute"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+       	android:paddingTop="20dp"   
+       	android:gravity="center" 
+       	android:drawableBottom="@drawable/main_contribute"
+       	android:drawablePadding="5dp"
+    	android:text="@string/introduction_text_click_to_contribute" 
+    	android:textSize="12sp"
+    	android:textColor="@color/opaque_yellow"
+    	cfont:cust_font="SourceSansPro_Semibold"/>  
+
+</LinearLayout>

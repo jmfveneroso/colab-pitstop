@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+    
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="5dp"
+	    android:orientation="horizontal"
+	    android:gravity="center">
+  
+        <com.sumbioun.android.pitstop.customwidgets.CustTextView 
+		    android:id="@+id/refuel_gasstation_list_item_comment_username"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:gravity="center"  
+		    android:paddingLeft="10dp"
+		    android:paddingTop="3dp"
+		    android:textSize="14dp"      	
+		    android:textColor="@color/opaque_white"  
+		    cfont:cust_font="SourceSansPro_Black"/>
+        
+	    <com.sumbioun.android.pitstop.customwidgets.StarGroup
+		    android:id="@+id/refuel_gasstation_list_item_comment_rating"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="10dp"
+		    android:orientation="horizontal" 
+		    cfont:star_editable="false"
+		    cfont:star_size="12"/>
+	    
+	</LinearLayout>
+	
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center">
+	
+		<com.sumbioun.android.pitstop.customwidgets.CustTextView 
+		    android:id="@+id/refuel_gasstation_list_item_comment_comment"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="5dp"
+		    android:textSize="12dp"      	
+		    android:textColor="@color/opaque_white"  
+		    cfont:cust_font="SourceSansPro_Semibold"/>
+	
+	</LinearLayout>
+
+</LinearLayout>

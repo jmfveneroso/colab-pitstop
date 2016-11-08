@@ -1,0 +1,208 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background_wood">
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+  	    android:id="@+id/refuel_km_text"
+  	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"	    
+	    android:paddingTop="10dp"
+	    android:paddingRight="10dp"
+	    android:paddingLeft="10dp"
+       	android:gravity="center"
+       	android:text="@string/workshop_flex_calculator_hint1"
+       	android:textSize="13sp"      	
+       	android:textColor="#ff000000"  
+	    cfont:cust_font="SourceSansPro_Bold"/>
+    
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    android:paddingTop="15dp">
+	    
+        <LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:gravity="center"
+		    android:paddingRight="30dp">
+		    
+            <com.sumbioun.android.pitstop.customwidgets.CustTextView
+		  	    android:layout_width="80dp"
+			    android:layout_height="wrap_content"
+	        	android:gravity="center"  
+	        	android:text="@string/workshop_flex_calculator_alcohol_price"
+	        	android:textSize="13sp"      	
+	        	android:textColor="#ff000000"  
+			    cfont:cust_font="SourceSansPro_Semibold"/>
+            
+            <com.sumbioun.android.pitstop.customwidgets.PriceDisplayer
+                android:id="@+id/workshop_flex_calculator_alc_price"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" 
+		        android:paddingTop="5dp"
+		        cfont:editable="true"
+		        cfont:digits="5"/> 
+		    
+        </LinearLayout>
+		    
+        <LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:gravity="center"
+		    android:paddingLeft="30dp">
+		    
+            <com.sumbioun.android.pitstop.customwidgets.CustTextView
+		  	    android:layout_width="80dp"
+			    android:layout_height="wrap_content"
+	        	android:gravity="center"  
+	        	android:text="@string/workshop_flex_calculator_gasoline_price"
+	        	android:textSize="13sp"      	
+	        	android:textColor="#ff000000"  
+			    cfont:cust_font="SourceSansPro_Semibold"/>
+            
+            <com.sumbioun.android.pitstop.customwidgets.PriceDisplayer
+                android:id="@+id/workshop_flex_calculator_gas_price"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" 
+		        android:paddingTop="5dp"
+		        cfont:editable="true"
+		        cfont:digits="5"/> 
+            
+        </LinearLayout>
+	    
+    </LinearLayout>
+    
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:paddingTop="10dp">
+	    
+           <com.sumbioun.android.pitstop.customwidgets.CustTextView
+	  	    android:layout_width="160dp"
+		    android:layout_height="wrap_content"
+        	android:gravity="center"  
+        	android:text="@string/workshop_flex_calculator_hint2"
+        	android:textSize="13sp"      	
+        	android:textColor="#ff000000"  
+		    cfont:cust_font="SourceSansPro_Semibold"/>
+           
+           <LinearLayout
+               android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:gravity="center"
+		       android:orientation="horizontal">
+           
+	           <com.sumbioun.android.pitstop.customwidgets.PriceDisplayer
+		            android:id="@+id/workshop_flex_calculator_performance_difference"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal" 
+			        android:paddingTop="5dp"
+			        cfont:editable="true"
+			        cfont:digits="5"
+			        cfont:pattern="00.00"/> 
+		        
+	           <ImageView
+			        android:src="@drawable/percentage"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center_vertical"
+			       	android:paddingTop="8dp"
+			        android:paddingLeft="3dp"
+			        android:contentDescription="@string/no_description"
+			        android:tint="@color/opaque_white" />
+           
+		   </LinearLayout> 
+           
+    </LinearLayout>
+        
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+        android:id="@+id/workshop_flex_calculator_calculate"
+  	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+       	android:gravity="center"  
+       	android:paddingTop="10dp"
+	    android:drawableTop="@drawable/calculator" 
+       	android:text="@string/workshop_flex_calculator_calculate"
+       	android:textSize="12sp"      	
+       	android:textColor="#ff000000"  
+	    cfont:cust_font="SourceSansPro_Semibold"/>
+    
+    <LinearLayout
+        android:id="@+id/workshop_flex_calculator_result_container"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:paddingTop="10dp">
+	    
+           <com.sumbioun.android.pitstop.customwidgets.CustTextView
+		  	    android:layout_width="180dp"
+			    android:layout_height="wrap_content"
+	        	android:gravity="center"  
+	        	android:text="@string/workshop_flex_calculator_hint3"
+	        	android:textSize="13sp"      	
+	        	android:textColor="#ff000000"  
+			    cfont:cust_font="SourceSansPro_Semibold"/>
+           
+           <LinearLayout
+               android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:gravity="center"
+		       android:orientation="horizontal">
+           
+	           <com.sumbioun.android.pitstop.customwidgets.PriceDisplayer
+	                android:id="@+id/workshop_flex_calculator_price_difference"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal" 
+			        android:paddingTop="15dp"
+			        cfont:editable="false"
+			        cfont:digits="5"
+			        cfont:pattern="00.00#"/> 
+			        
+	           <ImageView
+			        android:src="@drawable/percentage"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center_vertical"
+			        android:paddingTop="18dp"
+			        android:paddingLeft="3dp"
+			        android:contentDescription="@string/no_description" 
+			        android:tint="@color/opaque_white" />
+	           
+	       </LinearLayout> 
+	        
+           <com.sumbioun.android.pitstop.customwidgets.CustTextView
+		  	    android:layout_width="160dp"
+			    android:layout_height="wrap_content"
+	        	android:gravity="center"  
+	        	android:paddingTop="15dp"
+	        	android:text="@string/workshop_flex_calculator_hint4"
+	        	android:textSize="13sp"      	
+	        	android:textColor="#ff000000"  
+			    cfont:cust_font="SourceSansPro_Semibold"/>
+           
+           <com.sumbioun.android.pitstop.customwidgets.CustTextView
+               	android:id="@+id/workshop_flex_calculator_best_fuel"
+		  	    android:layout_width="160dp"
+			    android:layout_height="wrap_content"
+	        	android:gravity="center"  
+	        	android:textSize="16sp"      	
+	        	android:textColor="#ff000000"  
+			    cfont:cust_font="SourceSansPro_Black"/>
+		    
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:gravity="center">
+    
+<com.sumbioun.android.pitstop.customwidgets.CustTextView 
+    android:id="@+id/workshop_settings_list_item_label"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"  
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:textSize="16sp"      	
+    android:textColor="@color/opaque_white"  
+    cfont:cust_font="SourceSansPro_Bold"/>
+
+<com.sumbioun.android.pitstop.customwidgets.CustTextView
+    android:id="@+id/workshop_settings_list_item_info"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"  
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:textSize="12sp"      	
+    android:textColor="@color/opaque_white"  
+    cfont:cust_font="SourceSansPro_Semibold"/>
+
+</LinearLayout>

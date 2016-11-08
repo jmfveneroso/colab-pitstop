@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/asphalt_small">
+    
+    <android.support.v4.view.ViewPager
+	    android:id="@+id/refuel_main_pager"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" />
+    
+    <RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignParentTop="true"
+	    android:orientation="horizontal" 
+	    android:paddingTop="20dp"
+	    android:paddingRight="20dp"
+	    android:paddingLeft="20dp">
+	  	
+		  	<com.sumbioun.android.pitstop.customwidgets.CustTextView
+		  	    android:id="@+id/refuel_main_browser_distance"
+		  	    android:layout_width="100dp"
+			    android:layout_height="wrap_content"
+	        	android:layout_alignParentLeft="true"
+	        	android:gravity="center"  
+			    android:drawableBottom="@drawable/refuel_km" 
+	        	android:text="@string/refuel_main_browser_distance"
+	        	android:textSize="13sp"      	
+	        	android:textColor="@color/opaque_yellow"  
+			    cfont:cust_font="SourceSansPro_Semibold"/>
+		  	
+		  	<com.sumbioun.android.pitstop.customwidgets.CustTextView
+		  	    android:id="@+id/refuel_main_browser_price"
+		  	    android:layout_width="95dp"
+			    android:layout_height="wrap_content"
+	        	android:layout_alignParentRight="true"
+	        	android:gravity="center"  
+			    android:drawableBottom="@drawable/refuel_price" 
+	        	android:text="@string/refuel_main_browser_price"
+	        	android:textSize="13sp"
+	        	android:textColor="@color/opaque_yellow"
+			    cfont:cust_font="SourceSansPro_Semibold"/>
+		  	
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:id="@+id/refuel_main_pitstop_help"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:orientation="vertical" 
+	    android:gravity="center">
+		  
+        <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"  	        
+	        android:gravity="center"  
+	    	android:src="@drawable/pitstop_yellow"
+	    	android:contentDescription="@string/no_description" />
+        	
+	    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"  
+	        android:gravity="center"  
+	    	android:text="@string/help" 
+	    	android:textSize="13sp"
+	    	android:textColor="@color/opaque_yellow"
+	    	cfont:cust_font="SourceSansPro_Semibold"/>
+	    
+    </LinearLayout>
+    
+    <RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignParentBottom="true"
+	    android:padding="20dp"
+	    android:orientation="horizontal">
+	  	
+		  	<com.sumbioun.android.pitstop.customwidgets.CustTextView
+		  	    android:id="@+id/refuel_main_map"
+		  	    android:layout_width="95dp"
+			    android:layout_height="wrap_content"
+	        	android:layout_alignParentLeft="true"
+	        	android:paddingTop="40dp"
+	        	android:gravity="center"  
+			    android:drawableTop="@drawable/refuel_map"
+			    android:drawablePadding="16dp" 
+	        	android:text="@string/refuel_main_map"
+	        	android:textSize="13sp"
+	        	android:textColor="@color/opaque_yellow" 
+			    cfont:cust_font="SourceSansPro_Semibold" />
+		  	
+		  	<com.sumbioun.android.pitstop.customwidgets.CustTextView
+		  	    android:id="@+id/refuel_main_contribute"
+		  	    android:layout_width="92dp"
+			    android:layout_height="wrap_content"
+	        	android:layout_centerHorizontal="true"
+	        	android:paddingTop="40dp"
+	        	android:gravity="center"  
+			    android:drawableTop="@drawable/refuel_contribute" 
+			    android:drawablePadding="16dp" 
+	        	android:text="@string/refuel_main_contribute"
+	        	android:textSize="13sp"
+	        	android:textColor="@color/opaque_yellow"
+			    cfont:cust_font="SourceSansPro_Semibold"/>
+		  	
+		  	<com.sumbioun.android.pitstop.customwidgets.CustTextView
+		  	    android:id="@+id/refuel_main_route"
+		  	    android:layout_width="92dp"
+			    android:layout_height="wrap_content"
+	        	android:layout_alignParentRight="true"
+	        	android:paddingTop="40dp"
+	        	android:gravity="center"  
+			    android:drawableTop="@drawable/refuel_route" 
+			    android:drawablePadding="16dp" 
+	        	android:text="@string/refuel_main_route"
+	        	android:textSize="13sp"
+	        	android:textColor="@color/opaque_yellow"
+			    cfont:cust_font="SourceSansPro_Semibold"/>
+	    
+    </RelativeLayout>
+    
+</RelativeLayout>

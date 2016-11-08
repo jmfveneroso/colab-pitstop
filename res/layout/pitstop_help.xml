@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+    android:id="@+id/pitstop_help_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:gravity="center">
+
+	<com.sumbioun.android.pitstop.customwidgets.CustTextView
+	    android:id="@+id/pitstop_help_logo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"  
+	    android:gravity="center"  
+		android:drawableTop="@drawable/pitstop_yellow"
+		android:textSize="12sp"
+		android:textColor="@color/opaque_yellow"
+		cfont:cust_font="SourceSansPro_Semibold"/>
+
+</LinearLayout>

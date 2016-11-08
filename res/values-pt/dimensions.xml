@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="gasoline_width">110dp</dimen>
+    <dimen name="gasoline_margin_left">50dp</dimen>
+    <dimen name="alcohol_width">120dp</dimen>
+    <dimen name="alcohol_margin_left">40dp</dimen>
+    <dimen name="leaded_gasoline_width">55dp</dimen>
+    <dimen name="leaded_gasoline_margin_left">105dp</dimen>
+    <dimen name="diesel_width">120dp</dimen>
+    <dimen name="diesel_margin_left">40dp</dimen>
+    <dimen name="natural_gas_width">125dp</dimen>
+    <dimen name="natural_gas_margin_left">35dp</dimen>
+</resources>

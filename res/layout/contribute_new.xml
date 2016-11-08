@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/asphalt_small" >
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"  
+	   	android:paddingTop="20dp"
+	   	android:gravity="center"  
+	 	android:text="@string/add_gasstation_text_1" 
+	 	android:textSize="12sp"
+	 	android:textColor="@color/opaque_yellow"
+	 	cfont:cust_font="SourceSansPro_Bold"/>
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+		android:id="@+id/contribute_new_address"
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"  
+	   	android:paddingTop="5dp"
+	   	android:gravity="center"  
+	 	android:textSize="22sp"
+	 	android:textColor="@color/opaque_white"
+	 	cfont:cust_font="SourceSansPro_Semibold"/>
+    
+    <LinearLayout 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center">
+		
+	    <ProgressBar
+	         android:id="@+id/contribute_new_progress_bar"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:paddingTop="5dp"
+	  		 android:paddingBottom="5dp"
+	         style="@android:style/Widget.ProgressBar.Small.Inverse"
+	         android:gravity="center" />
+	    
+    </LinearLayout>
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"  
+	   	android:paddingTop="10dp"
+	   	android:paddingRight="60dp"
+	   	android:paddingLeft="60dp"
+	   	android:gravity="center"  
+	 	android:text="@string/add_gasstation_text_2" 
+	 	android:textSize="12sp"
+	 	android:textColor="@color/opaque_white"
+	 	cfont:cust_font="SourceSansPro_Bold"/>
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"  
+	   	android:paddingTop="15dp"
+	   	android:paddingRight="60dp"
+	   	android:paddingLeft="60dp"
+	   	android:gravity="center"  
+	 	android:text="@string/add_gasstation_text_3" 
+	 	android:textSize="12sp"
+	 	android:textColor="@color/opaque_yellow"
+	 	cfont:cust_font="SourceSansPro_Bold"/>
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"  
+	   	android:paddingTop="15dp"
+	   	android:paddingRight="40dp"
+	   	android:paddingLeft="40dp"
+	   	android:gravity="center"  
+	 	android:text="@string/add_gasstation_text_4" 
+	 	android:textSize="12sp"
+	 	android:textColor="@color/opaque_yellow"
+	 	cfont:cust_font="SourceSansPro_Bold"/>
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+  	    android:id="@+id/contribute_new_add_gasstation"
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:paddingTop="15dp"
+	    android:drawableTop="@drawable/secondary_new_gas_station"
+       	android:text="@string/new_gasstation"
+       	android:textSize="12sp"      	
+       	android:textColor="@color/opaque_yellow"  
+	    cfont:cust_font="SourceSansPro_Semibold"/> 
+		    
+    <!--  <com.sumbioun.android.pitstop.customwidgets.CustTextView
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"  
+	    android:paddingTop="10dp"
+		android:text="@string/contribute_new_gasstation_temp3" 
+	 	android:textSize="10dp"
+	 	android:textColor="@color/opaque_white"
+	 	android:gravity="center" 
+	 	cfont:cust_font="SourceSansPro_Semibold"/>-->
+
+
+</LinearLayout>

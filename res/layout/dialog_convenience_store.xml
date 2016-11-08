@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="SIM" />
+
+        <RadioButton
+            android:id="@+id/no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NÃO" />
+        
+    </RadioGroup>
+    
+    <ImageView
+        android:src="@drawable/line_horizontal_cropped"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" />
+    
+    <LinearLayout 
+        android:id="@+id/aaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical" >
+        
+	    <CheckBox
+	        android:id="@+id/visa_electron"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Drogaria" />
+	    
+	    <CheckBox
+	        android:id="@+id/amex"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Mercado" />
+	    
+	</LinearLayout>
+	
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="OK" />
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:paddingTop="15dp"
+	android:paddingLeft="55dp"
+	android:paddingRight="55dp">
+
+	<com.sumbioun.android.pitstop.customwidgets.CustTextView
+	    android:id="@+id/refuel_browser_lowest_price_set_radius"
+		android:layout_width="50dp"
+		android:layout_height="100dp" 
+		android:paddingTop="3dp"
+		android:gravity="center"
+		android:text="@string/refuel_browser_fragment_noentry_contribute"
+		android:textSize="12sp"
+		android:textColor="@color/opaque_white"  
+		android:drawableTop="@drawable/settings_radius" 
+		cfont:cust_font="SourceSansPro_Semibold"/>
+
+</LinearLayout>

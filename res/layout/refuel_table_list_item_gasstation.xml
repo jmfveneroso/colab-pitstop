@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center">
+    
+    <ImageView
+        android:id="@+id/refuel_table_listitem_gasstation_flag"
+        android:src="@drawable/flag_ipiranga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+	    android:paddingRight="7dp"
+	    android:paddingBottom="8dp"
+	    android:paddingLeft="7dp"
+        android:contentDescription="@string/no_description" />  
+        
+	<com.sumbioun.android.pitstop.customwidgets.CustTextView 
+	    android:id="@+id/refuel_table_listitem_gasstation_price"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"  
+	    android:paddingTop="8dp"
+	    android:paddingRight="7dp"
+	    android:paddingBottom="8dp"
+	    android:paddingLeft="7dp"
+	    android:textSize="16dp"      	
+	    android:textColor="@color/opaque_white"  
+	    cfont:cust_font="SourceSansPro_Black"/>
+	
+	<com.sumbioun.android.pitstop.customwidgets.CustTextView 
+	    android:id="@+id/refuel_table_listitem_gasstation_distance"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"  
+	    android:paddingTop="8dp"
+	    android:paddingRight="7dp"
+	    android:paddingBottom="8dp"
+	    android:paddingLeft="7dp"
+	    android:textSize="16dp"      	
+	    android:textColor="@color/opaque_white"  
+	    cfont:cust_font="SourceSansPro_Semibold"/>
+	
+	<com.sumbioun.android.pitstop.customwidgets.CustTextView
+	    android:id="@+id/refuel_table_listitem_gasstation_time"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"  
+	    android:paddingTop="8dp"
+	    android:paddingRight="7dp"
+	    android:paddingBottom="8dp"
+	    android:paddingLeft="7dp"
+	    android:textSize="16dp"      	
+	    android:textColor="@color/opaque_white"  
+	    cfont:cust_font="SourceSansPro_Semibold"/>
+	
+	<com.sumbioun.android.pitstop.customwidgets.CustTextView
+	    android:id="@+id/refuel_table_listitem_gasstation_last_update"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"  
+	    android:paddingTop="8dp"
+	    android:paddingRight="7dp"
+	    android:paddingBottom="8dp"
+	    android:paddingLeft="7dp"
+	    android:textSize="16dp"      	
+	    android:textColor="@color/opaque_white"  
+	    cfont:cust_font="SourceSansPro_Semibold"/>
+	
+	<ImageView
+	    android:id="@+id/refuel_table_listitem_gasstation_confirmed"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="8dp"
+	    android:paddingRight="7dp"
+	    android:paddingBottom="8dp"
+	    android:paddingLeft="7dp"
+	    android:src="@drawable/small_circle_red" 
+	    android:contentDescription="@string/no_description"/>
+
+</LinearLayout>

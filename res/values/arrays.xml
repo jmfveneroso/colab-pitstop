@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_quick_settings_fuel_types">
+        <item>GASOLINE</item>
+        <item>ALCOHOL</item>
+        <item>LEADED GAS</item>
+        <item>DIESEL</item>
+        <item>NATURAL GAS</item>
+    </string-array>
+    <string-array name="array_quick_settings_sort_by">
+        <item>DISTANCE</item>
+        <item>PRICE</item>
+    </string-array>
+    <string-array name="contribute_extra_items">
+        <item>PAYMENT METHODS</item>
+        <item>CONVENIENCE STORE</item>
+        <item>CAR-WASH</item>
+        <item>CAR REPAIR</item>
+        <item>RESTAURANT</item>
+        <item>24 HOURS</item>
+        <item>PHOTO</item>
+        <item>TELEPHONE</item>
+    </string-array>
+    <string-array name="contribute_extra_payment_methods">
+        <item>VISA</item>
+        <item>MASTERCARD</item>
+        <item>AMERICAN EXPRESS</item>
+        <item>VISA ELECTRON</item>
+        <item>CHECK</item>
+    </string-array>
+    <string-array name="contribute_extra_convenience_store">
+        <item>GROCERY</item>
+        <item>DRUGSTORE</item>
+    </string-array>
+    <string-array name="contribute_extra_car_wash">
+        <item>NONE</item>
+        <item>AUTOMATIC</item>
+        <item>MANUAL</item>
+        <item>PRESSURE HOSE</item>
+    </string-array>
+    <string-array name="array_workshop_settings">
+        <item>LANGUAGE</item>
+        <item>UNIT OF MEASUREMENT</item>
+        <item>MAXIMUM TABLE RESULTS</item>
+        <item>DEFAULT FUEL</item>
+        <item>DEFAULT RADIUS</item>
+    </string-array>
+    <string-array name="pref_language_entries">
+        <item>English</item>
+        <item>Português</item>
+    </string-array>
+    <string-array name="pref_language_values">
+        <item>en</item>
+        <item>pt</item>
+    </string-array>
+    <string-array name="pref_unit_of_measurement_entries">
+        <item>Metric (km)</item>
+        <item>Imperial (mi.)</item>
+    </string-array>
+    <string-array name="pref_unit_of_measurement_values">
+        <item>km</item>
+        <item>mi.</item>
+    </string-array>
+    <string-array name="pref_fuel_type_entries">
+        <item>Gasoline</item>
+        <item>Alcohol</item>
+        <item>Leaded Gasoline</item>
+        <item>Diesel</item>
+        <item>Natural Gas</item>
+    </string-array>
+    <string-array name="pref_fuel_type_values">
+        <item>GASOLINE</item>
+        <item>ALCOHOL</item>
+        <item>LEADED_GASOLINE</item>
+        <item>DIESEL</item>
+        <item>NATURAL_GAS</item>
+    </string-array>
+    <string-array name="pref_radius_entries">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="pref_radius_values">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="pref_results_table_entries">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="pref_results_table_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+</resources>

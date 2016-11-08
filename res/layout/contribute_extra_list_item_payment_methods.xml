@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="horizontal">
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView 
+	    android:id="@+id/contribute_extra_list_item_payment_methods_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:layout_alignParentLeft="true"
+	    android:paddingLeft="5dp"
+	    android:layout_centerVertical="true"
+	    android:textSize="14dp"      	
+	    android:textColor="@color/opaque_white"  
+	    cfont:cust_font="SourceSansPro_Black"/>
+    
+    <LinearLayout
+        android:id="@+id/contribute_extra_list_item_payment_methods_images"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:paddingRight="5dp"
+    	android:layout_centerVertical="true"
+    	android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+        
+	    <ImageView
+	        android:id="@+id/refuel_gasstation_restaurant"
+	        android:src="@drawable/visa_mini"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="5dp"
+	        android:contentDescription="@string/no_description" />
+	    
+	    <ImageView
+	        android:id="@+id/refuel_gasstation_restaurant"
+	        android:src="@drawable/mastercard_mini"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="5dp"
+	        android:contentDescription="@string/no_description" />
+	    
+	    <ImageView
+	        android:id="@+id/refuel_gasstation_restaurant"
+	        android:src="@drawable/american_express_mini"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="5dp"
+	        android:contentDescription="@string/no_description" />
+	    
+	    <ImageView
+	        android:id="@+id/refuel_gasstation_restaurant"
+	        android:src="@drawable/visa_electron_mini"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="5dp"
+	        android:contentDescription="@string/no_description" />
+	    
+	    <ImageView
+	        android:id="@+id/refuel_gasstation_restaurant"
+	        android:src="@drawable/check_mini"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="5dp"
+	        android:contentDescription="@string/no_description" />
+    
+    </LinearLayout>
+
+</RelativeLayout>

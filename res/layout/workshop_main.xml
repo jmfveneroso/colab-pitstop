@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background_wood">
+    
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:paddingTop="40dp"
+	    android:orientation="vertical"
+	    android:gravity="center">
+	  	
+	  	<com.sumbioun.android.pitstop.customwidgets.CustTextView
+	  	    android:id="@+id/workshop_main_flex_calculator"
+	  	    android:layout_width="80dp"
+		    android:layout_height="wrap_content"
+        	android:gravity="center"  
+		    android:drawableBottom="@drawable/flex_calculator" 
+        	android:text="@string/workshop_main_flex_calculator"
+        	android:textSize="13sp"      	
+        	android:textColor="#ff000000"  
+		    cfont:cust_font="SourceSansPro_Semibold"/>
+	    
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/workshop_main_pitstop_help"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_centerVertical="true"
+	    android:orientation="vertical" 
+	    android:gravity="center">
+		  
+        <ImageView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"  	        
+	        android:gravity="center"  
+	    	android:src="@drawable/pitstop_yellow"
+	    	android:tint="#ff000000"
+	    	android:contentDescription="@string/no_description" />
+        	
+	    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"  
+	        android:gravity="center"  
+	    	android:text="@string/help" 
+	    	android:textSize="13sp"
+	    	android:textColor="#ff000000"
+	    	cfont:cust_font="SourceSansPro_Semibold"/>
+	    
+    </LinearLayout>
+    
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:paddingBottom="40dp"
+	    android:orientation="vertical"
+	    android:gravity="center">
+	  	
+	  	<com.sumbioun.android.pitstop.customwidgets.CustTextView
+	  	    android:id="@+id/workshop_main_settings"
+	  	    android:layout_width="85dp"
+		    android:layout_height="wrap_content"
+        	android:gravity="center"  
+		    android:drawableTop="@drawable/settings" 
+        	android:text="@string/workshop_main_settings"
+        	android:textSize="13sp"      	
+        	android:textColor="#ff000000"  
+		    cfont:cust_font="SourceSansPro_Semibold"/>
+	    
+    </LinearLayout>
+    
+</RelativeLayout>

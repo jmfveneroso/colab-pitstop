@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background_asphalt" >
+    
+    <!-- DEPRECATED
+    
+    
+    
+    <RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    
+        <com.sumbioun.android.pitstop.CustTextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"  
+	        android:layout_centerHorizontal="true"
+        	android:layout_centerVertical="true"
+        	android:paddingTop="20dp"
+        	android:gravity="center"  
+	    	android:drawableTop="@drawable/pitstop_yellow"  
+	    	android:text="RECIFE, PE, BRASIL" 
+	    	android:textSize="10dp"
+	    	android:textColor="@color/opaque_white"
+	    	cfont:cust_font="SourceSansPro_Bold"/>
+	    
+    </RelativeLayout>
+    
+    <com.sumbioun.android.pitstop.QuickSettings
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:paddingTop="20dp"
+	  	android:paddingRight="45dp"
+	  	android:paddingLeft="45dp" />
+    
+    <RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingTop="30dp"
+	    android:paddingLeft="55dp"
+	  	android:paddingRight="55dp" 
+	  	android:orientation="horizontal" >
+        
+        <LinearLayout
+            android:id="@+id/minus_price"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:gravity="center"
+	        android:orientation="vertical"
+            >
+            
+            <com.sumbioun.android.pitstop.CustTextView
+		        android:layout_width="70dp"
+		        android:layout_height="wrap_content"
+		        android:singleLine="true"
+		        android:gravity="center"
+		        android:text="@string/minus_price"
+                android:textSize="32dp"
+		        android:textColor="@color/opaque_yellow" 
+				cfont:cust_font="SourceSansPro_Black" />
+            
+            <com.sumbioun.android.pitstop.CustTextView
+                android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" 
+	        	android:text="8 min"
+	        	android:textSize="12dp"
+	        	android:textColor="@color/opaque_white"
+			    cfont:cust_font="SourceSansPro_Italic" />
+            
+            <com.sumbioun.android.pitstop.PriceDisplayer
+		        android:id="@+id/minus_price"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" 
+		        android:paddingTop="5dp"
+		        cfont:editable="false"
+		        cfont:digits="5"/> 
+            
+            <com.sumbioun.android.pitstop.CustTextView
+                android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+	        	android:text="3.1 km"
+	        	android:textSize="12dp"
+	        	android:textColor="@color/opaque_white"
+	        	cfont:cust_font="SourceSansPro_Semibold" />
+            
+            <com.sumbioun.android.pitstop.CustTextView
+                android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" 
+			    android:paddingTop="3dp"
+	        	android:text="07.01.13"
+	        	android:textSize="10dp"
+	        	android:textColor="@color/opaque_white"  
+			    cfont:cust_font="SourceSansPro_Semibold"/>
+            
+        </LinearLayout>
+        
+        <ImageView
+	        android:id="@+id/load_screen_logos"
+	        android:src="@drawable/line_vertical_dashed"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingTop="10dp"
+	        android:adjustViewBounds="true"
+	        android:layout_centerHorizontal="true" 
+	        android:contentDescription="@string/no_description"/>
+        
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:gravity="center"
+	        android:orientation="vertical"
+            >
+            
+            <com.sumbioun.android.pitstop.CustTextView
+                android:layout_width="70dp"
+		        android:layout_height="wrap_content"
+		        android:gravity="center"
+				android:text="@string/plus_price"
+                android:textSize="32dp"
+		        android:singleLine="true"
+		        android:textColor="@color/opaque_yellow" 
+				cfont:cust_font="SourceSansPro_Black" />
+            
+            <com.sumbioun.android.pitstop.CustTextView
+                android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" 
+	        	android:text="8 min"
+	        	android:textSize="12dp"
+	        	android:textColor="@color/opaque_white"
+			    cfont:cust_font="SourceSansPro_Italic" />
+            
+            <com.sumbioun.android.pitstop.PriceDisplayer
+		        android:id="@+id/plus_price"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" 
+		        android:paddingTop="5dp"
+		        cfont:editable="false"
+		        cfont:digits="5"/> 
+            
+            <com.sumbioun.android.pitstop.CustTextView
+                android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+	        	android:text="4.3 km"
+	        	android:textSize="12dp"
+	        	android:textColor="@color/opaque_white"
+	        	cfont:cust_font="SourceSansPro_Semibold" />
+            
+            <com.sumbioun.android.pitstop.CustTextView
+                android:layout_width="wrap_content"
+			    android:layout_height="wrap_content" 
+			    android:paddingTop="3dp"
+	        	android:text="07.01.13"
+	        	android:textSize="10dp"
+	        	android:textColor="@color/opaque_white"  
+			    cfont:cust_font="SourceSansPro_Semibold"/>
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+     <LinearLayout 
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:gravity="center">
+        
+        <com.sumbioun.android.pitstop.CustTextView
+            android:id="@+id/show_table"
+            android:layout_width="50dp"
+			android:layout_height="wrap_content"
+			android:paddingTop="0dp"
+			android:gravity="center"
+	        android:text="@string/show_table"
+	        android:textSize="12dp"
+	        android:textColor="@color/opaque_yellow" 
+	        cfont:cust_font="SourceSansPro_Bold" />
+        
+    </LinearLayout>
+    
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 	    
+	    android:paddingTop="20dp"
+	  	android:paddingRight="45dp"
+	  	android:paddingLeft="45dp" >
+	    
+        <com.sumbioun.android.pitstop.CustTextView
+	        android:id="@+id/main_route"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"  
+	        android:layout_alignParentLeft="true"
+	        android:gravity="center"  
+	        android:drawableTop="@drawable/main_route"
+	    	android:text="@string/main_route" 
+	    	android:textSize="10dp"
+	    	android:textColor="@color/opaque_yellow" 
+	    	cfont:cust_font="SourceSansPro_Semibold" />
+        
+        <com.sumbioun.android.pitstop.CustTextView
+	        android:id="@+id/main_map"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"  
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center"  
+	    	android:drawableTop="@drawable/main_map"
+	    	android:text="@string/main_map" 
+	    	android:textSize="10dp"
+	    	android:textColor="@color/opaque_yellow"
+	    	cfont:cust_font="SourceSansPro_Semibold" />
+        
+        <com.sumbioun.android.pitstop.CustTextView
+	        android:id="@+id/contribute"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"  
+	        android:layout_alignParentRight="true"
+	        android:gravity="center"  
+	    	android:drawableTop="@drawable/main_contribute"
+	    	android:text="@string/main_contribute" 
+	    	android:textSize="10dp"
+	    	android:textColor="@color/opaque_yellow"
+	    	cfont:cust_font="SourceSansPro_Semibold" />
+	    
+    </RelativeLayout>
+    
+    <TextView
+	        android:id="@+id/current_location"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"  
+	        android:gravity="center" 
+	        android:paddingTop="10dp"
+	    	android:text="Avenida Beira Mar - Boa Viagem" 
+	    	android:textSize="10dp"
+	    	android:textColor="@color/opaque_white"
+	    	 />
+    -->
+
+</LinearLayout>

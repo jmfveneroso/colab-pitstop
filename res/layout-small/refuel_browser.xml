@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/asphalt_small"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	    
+	    <com.sumbioun.android.pitstop.customwidgets.QuickSettings
+		    android:id="@+id/refuel_browser_quick_settings"
+			android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" 
+		    android:paddingTop="10dp"
+		  	android:paddingRight="45dp"
+		  	android:paddingLeft="45dp" />
+			
+	    <!-- <FrameLayout
+			android:id="@+id/refuel_browser_fragment_container"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content" /> -->
+	    
+	    <RelativeLayout
+	        android:id="@+id/refuel_browser_container"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:paddingTop="15dp"
+			android:paddingLeft="55dp"
+			android:paddingRight="55dp">
+		
+			<LinearLayout
+				android:id="@+id/refuel_browser_fragment_distance_shortest_distance"		
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:orientation="vertical"	
+				android:gravity="center">
+		
+				<com.sumbioun.android.pitstop.customwidgets.CustTextView
+				    android:id="@+id/refuel_browser_fragment_label_less"
+					android:layout_width="70dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:singleLine="true"
+					android:textSize="32sp"
+					android:textColor="@color/opaque_yellow" 
+					cfont:cust_font="SourceSansPro_Black" />
+		
+				<com.sumbioun.android.pitstop.customwidgets.CustTextView
+				    android:id="@+id/refuel_browser_shortest_distance_top"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:textSize="12sp"
+					android:textColor="@color/opaque_white"
+					cfont:cust_font="SourceSansPro_Italic" />
+		
+				<com.sumbioun.android.pitstop.customwidgets.PriceDisplayer
+					android:id="@+id/refuel_browser_shortest_distance_displayer"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal" 
+					android:paddingTop="5dp"
+					cfont:editable="false"
+					cfont:digits="5"/> 
+		
+				<com.sumbioun.android.pitstop.customwidgets.CustTextView
+					android:id="@+id/refuel_browser_shortest_distance_sub"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingTop="5dp"
+					android:textSize="12sp"
+					android:textColor="@color/opaque_white"
+					cfont:cust_font="SourceSansPro_Semibold" />
+		
+				<com.sumbioun.android.pitstop.customwidgets.CustTextView
+					android:id="@+id/refuel_browser_shortest_distance_last_update"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:paddingTop="3dp"
+					android:textSize="12sp"
+					android:textColor="@color/opaque_white"  
+					cfont:cust_font="SourceSansPro_Semibold"/>
+		
+			</LinearLayout>
+		
+			<ImageView
+				android:id="@+id/load_screen_logos"
+				android:src="@drawable/line_vertical_dashed"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingTop="10dp"
+				android:adjustViewBounds="true"
+				android:layout_centerHorizontal="true" 
+				android:contentDescription="@string/no_description" />
+		
+			<LinearLayout
+				android:id="@+id/refuel_browser_fragment_distance_lowest_price"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:gravity="center"
+				android:orientation="vertical" >
+		
+				<com.sumbioun.android.pitstop.customwidgets.CustTextView
+				    android:id="@+id/refuel_browser_fragment_label_more"
+					android:layout_width="70dp"
+					android:layout_height="wrap_content"
+					android:gravity="center"
+					android:textSize="32sp"
+					android:singleLine="true"
+					android:textColor="@color/opaque_yellow" 
+					cfont:cust_font="SourceSansPro_Black" />
+		
+				<com.sumbioun.android.pitstop.customwidgets.CustTextView
+				    android:id="@+id/refuel_browser_lowest_price_top"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:textSize="12sp"
+					android:textColor="@color/opaque_white"
+					cfont:cust_font="SourceSansPro_Italic" />
+		
+				<com.sumbioun.android.pitstop.customwidgets.PriceDisplayer
+					android:id="@+id/refuel_browser_lowest_price_displayer"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal" 
+					android:paddingTop="5dp"
+					cfont:editable="false"
+					cfont:digits="5"/> 
+		
+				<com.sumbioun.android.pitstop.customwidgets.CustTextView
+				    android:id="@+id/refuel_browser_lowest_price_sub"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:paddingTop="5dp"
+					android:textSize="12sp"
+					android:textColor="@color/opaque_white"
+					cfont:cust_font="SourceSansPro_Semibold" />
+		
+				<com.sumbioun.android.pitstop.customwidgets.CustTextView
+				    android:id="@+id/refuel_browser_lowest_price_last_update"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content" 
+					android:paddingTop="3dp"
+					android:textSize="12sp"
+					android:textColor="@color/opaque_white"  
+					cfont:cust_font="SourceSansPro_Semibold"/>
+		
+			</LinearLayout>
+		
+		</RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/refuel_browser_progress_bar"
+			android:layout_width="fill_parent"
+			android:layout_height="150dp"
+			android:orientation="vertical"
+			android:gravity="center">
+			
+		    <ProgressBar
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_centerInParent="true"
+		         style="@android:style/Widget.ProgressBar.Large.Inverse"
+		         android:gravity="center" />
+		    
+	    </RelativeLayout>
+	   
+	    <!--<LinearLayout 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:gravity="center">
+		
+				<com.sumbioun.android.pitstop.customwidgets.CustTextView
+					android:id="@+id/refuel_browser_show_table"
+					android:layout_width="50dp"
+					android:layout_height="wrap_content"
+					android:paddingTop="0dp"
+					android:gravity="center"
+					android:text="@string/refuel_browser_show_table"
+					android:textSize="12dp"
+					android:textColor="@color/opaque_yellow" 
+					cfont:cust_font="SourceSansPro_Bold" />
+			
+		</LinearLayout>-->
+	    
+	    <RelativeLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" 	    
+		    android:paddingTop="20dp"
+		  	android:paddingRight="45dp"
+		  	android:paddingLeft="45dp" >
+				
+		     <!---->
+	        <com.sumbioun.android.pitstop.customwidgets.CustTextView
+		        android:id="@+id/refuel_browser_route"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"   
+		        android:gravity="center"  
+		        android:layout_alignParentRight="true"
+		        android:drawableTop="@drawable/main_route"
+		    	android:text="@string/refuel_browser_route" 
+		    	android:textSize="12sp"
+		    	android:textColor="@color/opaque_yellow" 
+		    	cfont:cust_font="SourceSansPro_Semibold" />
+	        
+	        <com.sumbioun.android.pitstop.customwidgets.CustTextView
+		        android:id="@+id/refuel_browser_map"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"        
+		        android:gravity="center"  
+		    	android:drawableTop="@drawable/main_map"
+		    	android:text="@string/refuel_browser_map" 
+		    	android:textSize="12sp"
+		    	android:textColor="@color/opaque_yellow"
+		    	cfont:cust_font="SourceSansPro_Semibold" />
+	        
+	        <com.sumbioun.android.pitstop.customwidgets.CustTextView
+		        android:id="@+id/refuel_browser_contribute"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"  
+		        android:layout_centerHorizontal="true" 
+		        android:gravity="center"  
+		    	android:drawableTop="@drawable/table"
+		    	android:text="@string/refuel_browser_show_table" 
+		    	android:textSize="12sp"
+		    	android:textColor="@color/opaque_yellow"
+		    	cfont:cust_font="SourceSansPro_Semibold" />
+		    
+	    </RelativeLayout>
+	    
+	    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+		        android:id="@+id/refuel_browser_current_address"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"  
+		        android:gravity="center" 
+		        android:paddingTop="10dp"
+		    	android:textSize="12sp"
+		    	android:textColor="@color/opaque_white" />
+
+	</LinearLayout>
+	
+	<com.google.ads.AdView android:id="@+id/adView"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           ads:adUnitId="ca-app-pub-1978179266754065/2789472434"
+           ads:adSize="BANNER"
+           ads:loadAdOnCreate="true"/>
+	
+</RelativeLayout>

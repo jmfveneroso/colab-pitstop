@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_quick_settings_fuel_types">
+        <item>GASOLINA</item>
+        <item>ÁLCOOL</item>
+        <item>ADITIVADA</item>
+        <item>DIESEL</item>
+        <item>GNV</item>
+    </string-array>
+    <string-array name="array_quick_settings_sort_by">
+        <item>DISTÂNCIA</item>
+        <item>PREÇO</item>
+    </string-array>
+    <string-array name="contribute_extra_items">
+        <item>F. DE PAGAMENTO</item>
+        <item>LOJA DE CONVENIÊNCIA</item>
+        <item>LAVA-JATO</item>
+        <item>OFICINA</item>
+        <item>RESTAURANTE</item>
+        <item>24 HORAS</item>
+        <item>FOTO</item>
+        <item>TELEFONE</item>
+    </string-array>
+    <string-array name="contribute_extra_payment_methods">
+        <item>VISA</item>
+        <item>MASTERCARD</item>
+        <item>AMERICAN EXPRESS</item>
+        <item>VISA ELECTRON</item>
+        <item>CHEQUE</item>
+    </string-array>
+    <string-array name="contribute_extra_convenience_store">
+        <item>MERCADO</item>
+        <item>DROGARIA</item>
+    </string-array>
+    <string-array name="contribute_extra_car_wash">
+        <item>NENHUM</item>
+        <item>AUTOMÁTICO</item>
+        <item>MANUAL</item>
+        <item>PRESSÃO</item>
+    </string-array>
+    <string-array name="array_workshop_settings">
+        <item>IDIOMA</item>
+        <item>UNIDADE DE DISTÂNCIA</item>
+        <item>RESULTADOS DA TABELA</item>
+        <item>COMBUSTÍVEL</item>
+        <item>RAIO DE BUSCA</item>
+    </string-array>
+    <string-array name="pref_language_entries">
+        <item>English</item>
+        <item>Português</item>
+    </string-array>
+    <string-array name="pref_language_values">
+        <item>en</item>
+        <item>pt</item>
+    </string-array>
+    <string-array name="pref_unit_of_measurement_entries">
+        <item>Quilômetro</item>
+        <item>Milha</item>
+    </string-array>
+    <string-array name="pref_unit_of_measurement_values">
+        <item>km</item>
+        <item>mi.</item>
+    </string-array>
+    <string-array name="pref_fuel_type_entries">
+        <item>Gasolina</item>
+        <item>Álcool</item>
+        <item>Gasolina Aditivada</item>
+        <item>Diesel</item>
+        <item>GNV</item>
+    </string-array>
+    <string-array name="pref_fuel_type_values">
+        <item>GASOLINE</item>
+        <item>ALCOHOL</item>
+        <item>LEADED_GASOLINE</item>
+        <item>DIESEL</item>
+        <item>NATURAL_GAS</item>
+    </string-array>
+    <string-array name="pref_radius_entries">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="pref_radius_values">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="pref_results_table_entries">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="pref_results_table_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+   <!--   <CheckBoxPreference
+        android:key="pref_language"
+        android:title="@string/pref_sync"
+        android:summary="@string/pref_sync_summ"
+        android:defaultValue="true" />-->
+    <ListPreference
+        android:key="pref_language"
+        android:title="@string/pref_language"
+        android:dialogTitle="@string/pref_language"
+        android:entries="@array/pref_language_entries"
+        android:entryValues="@array/pref_language_values" />
+    <ListPreference
+        android:key="pref_unit_of_measurement"
+        android:title="@string/pref_unit_of_measurement"
+        android:dialogTitle="@string/pref_unit_of_measurement"
+        android:entries="@array/pref_unit_of_measurement_entries"
+        android:entryValues="@array/pref_unit_of_measurement_values"
+        android:defaultValue="@string/pref_unit_of_measurement_default" />
+    <ListPreference
+        android:key="pref_fuel_type"
+        android:title="@string/pref_fuel_type"
+        android:dialogTitle="@string/pref_fuel_type"
+        android:entries="@array/pref_fuel_type_entries"
+        android:entryValues="@array/pref_fuel_type_values"
+        android:defaultValue="@string/pref_fuel_type_default" />
+    <!--  <ListPreference
+        android:key="pref_radius"
+        android:title="@string/pref_radius"
+        android:dialogTitle="@string/pref_radius"
+        android:entries="@array/pref_radius_entries"
+        android:entryValues="@array/pref_radius_values"
+        android:defaultValue="@string/pref_radius_default" />-->
+    <ListPreference
+        android:key="pref_results_table"
+        android:title="@string/pref_results_table"
+        android:dialogTitle="@string/pref_results_table"
+        android:entries="@array/pref_results_table_entries"
+        android:entryValues="@array/pref_results_table_values"
+        android:defaultValue="@string/pref_results_table_default" />
+    <com.sumbioun.android.pitstop.customwidgets.SeekBarPreference
+        android:key="pref_radius_test"
+        android:title="@string/pref_radius"
+        android:dialogTitle="@string/pref_radius" />
+   <!--   <Preference
+        android:key="delete_database" 
+        android:title="@string/pref_delete_database"/>-->
+
+</PreferenceScreen>

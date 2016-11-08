@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="business_hours_items">
+        <item>HORÁRIO DE ABERTURA</item>
+        <item>HORÁRIO DE FECHAMENTO</item>
+        <item>DIAS DA SEMANA</item>
+    </string-array>
+</resources>

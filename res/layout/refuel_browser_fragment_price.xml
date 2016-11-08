@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="horizontal"
+	android:paddingTop="15dp"
+	android:paddingLeft="55dp"
+	android:paddingRight="55dp" >
+
+	<LinearLayout
+		android:id="@+id/refuel_browser_fragment_price_lowest_price"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentLeft="true"
+		android:gravity="center"
+		android:orientation="vertical" >
+
+		<com.sumbioun.android.pitstop.customwidgets.CustTextView
+			android:layout_width="70dp"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:gravity="center"
+			android:text="@string/minus_price"
+			android:textSize="32sp"
+			android:textColor="@color/opaque_yellow" 
+			cfont:cust_font="SourceSansPro_Black" />
+
+		<com.sumbioun.android.pitstop.customwidgets.CustTextView
+		    android:id="@+id/refuel_browser_fragment_price_lowest_price_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textSize="12sp"
+			android:textColor="@color/opaque_white"
+			android:maxLength="3"
+			cfont:cust_font="SourceSansPro_Italic" />
+
+		<com.sumbioun.android.pitstop.customwidgets.PriceDisplayer
+		    android:id="@+id/refuel_browser_fragment_price_lowest_price_displayer"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" 
+			android:paddingTop="5dp"
+			cfont:editable="false"
+			cfont:digits="5" /> 
+
+		<com.sumbioun.android.pitstop.customwidgets.CustTextView
+		    android:id="@+id/refuel_browser_fragment_price_lowest_price_distance"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="5dp"
+			android:textSize="12sp"
+			android:textColor="@color/opaque_white"
+			cfont:cust_font="SourceSansPro_Semibold" />
+
+		<com.sumbioun.android.pitstop.customwidgets.CustTextView
+		    android:id="@+id/refuel_browser_fragment_price_lowest_price_last_update"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:paddingTop="3dp"
+			android:textSize="12sp"
+			android:textColor="@color/opaque_white"  
+			cfont:cust_font="SourceSansPro_Semibold" />
+
+	</LinearLayout>
+
+	<ImageView
+		android:src="@drawable/line_vertical_dashed"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingTop="10dp"
+		android:adjustViewBounds="true"
+		android:layout_centerHorizontal="true" 
+		android:contentDescription="@string/no_description" />
+
+	<LinearLayout
+	    android:id="@+id/refuel_browser_fragment_price_shortest_distance"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentRight="true"
+		android:gravity="center"
+		android:orientation="vertical" >
+
+		<com.sumbioun.android.pitstop.customwidgets.CustTextView
+			android:layout_width="70dp"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="@string/plus_price"
+			android:textSize="32sp"
+			android:singleLine="true"
+			android:textColor="@color/opaque_yellow" 
+			cfont:cust_font="SourceSansPro_Black" />
+
+		<com.sumbioun.android.pitstop.customwidgets.CustTextView
+		    android:id="@+id/refuel_browser_fragment_price_shortest_distance_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textSize="12sp"
+			android:textColor="@color/opaque_white"
+			android:maxLength="3"
+			cfont:cust_font="SourceSansPro_Italic" />
+
+		<com.sumbioun.android.pitstop.customwidgets.PriceDisplayer
+			android:id="@+id/refuel_browser_fragment_price_shortest_distance_displayer"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal" 
+			android:paddingTop="5dp"
+			cfont:editable="false"
+			cfont:digits="5" /> 
+
+		<com.sumbioun.android.pitstop.customwidgets.CustTextView
+		    android:id="@+id/refuel_browser_fragment_price_shortest_distance_distance"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="5dp"
+			android:textSize="12sp"
+			android:textColor="@color/opaque_white"
+			cfont:cust_font="SourceSansPro_Semibold" />
+
+		<com.sumbioun.android.pitstop.customwidgets.CustTextView
+		    android:id="@+id/refuel_browser_fragment_price_shortest_distance_last_update"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:paddingTop="3dp"
+			android:textSize="12sp"
+			android:textColor="@color/opaque_white"  
+			cfont:cust_font="SourceSansPro_Semibold" />
+
+	</LinearLayout>
+
+</RelativeLayout>

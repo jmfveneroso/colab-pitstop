@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+    android:id="@+id/contribute_main_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/asphalt_small" >
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+       	android:paddingTop="10dp"
+       	android:paddingRight="30dp"
+       	android:paddingLeft="30dp"
+       	android:gravity="center"  
+    	android:text="@string/contribute_main_hint1" 
+    	android:textSize="12sp"
+    	android:textColor="@color/opaque_yellow"
+    	cfont:cust_font="SourceSansPro_Bold"/>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingTop="10dp"
+	    android:paddingRight="40dp"
+       	android:paddingLeft="40dp">
+        
+        <LinearLayout
+            android:id="@+id/contribute_main_gasoline"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+	        
+            <com.sumbioun.android.pitstop.customwidgets.CustTextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"  
+	        	android:gravity="center"  
+		    	android:text="@string/contribute_main_gasoline" 
+		    	android:textSize="12sp"
+		    	android:textColor="@color/opaque_yellow"
+		    	cfont:cust_font="SourceSansPro_Semibold"/>
+            
+            <com.sumbioun.android.pitstop.customwidgets.PriceDisplayer
+		        android:id="@+id/contribute_main_price_displayer_gas"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" 
+		        android:paddingTop="5dp"
+		        cfont:editable="true"
+		        cfont:digits="5"
+				cfont:dialog_title="@string/contribute_main_gasoline"
+				cfont:changecolor="true"/>      
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/contribute_main_leaded_gasoline"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+            
+            <com.sumbioun.android.pitstop.customwidgets.CustTextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"  
+	        	android:gravity="center"  
+		    	android:text="@string/contribute_main_leaded_gasoline" 
+		    	android:textSize="12sp"
+		    	android:textColor="@color/opaque_yellow"
+		    	cfont:cust_font="SourceSansPro_Semibold"/>
+            
+            <com.sumbioun.android.pitstop.customwidgets.PriceDisplayer
+                android:id="@+id/contribute_main_price_displayer_lea"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" 
+		        android:paddingTop="5dp"
+		        cfont:editable="true"
+		        cfont:digits="5"
+				cfont:dialog_title="@string/contribute_main_leaded_gasoline"
+				cfont:changecolor="true"/>   
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingTop="10dp"
+	    android:paddingRight="40dp"
+       	android:paddingLeft="40dp">
+        
+        <LinearLayout
+            android:id="@+id/contribute_main_alcohol"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+	        
+            <com.sumbioun.android.pitstop.customwidgets.CustTextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"  
+	        	android:gravity="center"  
+		    	android:text="@string/contribute_main_alcohol" 
+		    	android:textSize="12sp"
+		    	android:textColor="@color/opaque_yellow"
+		    	cfont:cust_font="SourceSansPro_Semibold"/>
+            
+            <com.sumbioun.android.pitstop.customwidgets.PriceDisplayer
+		        android:id="@+id/contribute_main_price_displayer_alc"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" 
+		        android:paddingTop="5dp"
+		        cfont:editable="true"
+		        cfont:digits="5"
+				cfont:dialog_title="@string/contribute_main_alcohol"
+				cfont:changecolor="true"/>      
+            
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/contribute_main_diesel"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+            
+            <com.sumbioun.android.pitstop.customwidgets.CustTextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"  
+	        	android:gravity="center"  
+		    	android:text="@string/contribute_main_diesel" 
+		    	android:textSize="12sp"
+		    	android:textColor="@color/opaque_yellow"
+		    	cfont:cust_font="SourceSansPro_Semibold"/>
+            
+            <com.sumbioun.android.pitstop.customwidgets.PriceDisplayer
+                android:id="@+id/contribute_main_price_displayer_die"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" 
+		        android:paddingTop="5dp"
+		        cfont:editable="true"
+		        cfont:digits="5"
+				cfont:dialog_title="@string/contribute_main_diesel"
+				cfont:changecolor="true"/>   
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/contribute_main_natural_gas"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:orientation="vertical" >
+           
+        <com.sumbioun.android.pitstop.customwidgets.CustTextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"  
+        	android:gravity="center"  
+	    	android:text="@string/contribute_main_natural_gas" 
+	    	android:textSize="12sp"
+	    	android:textColor="@color/opaque_yellow"
+	    	cfont:cust_font="SourceSansPro_Semibold"/>
+           
+           <com.sumbioun.android.pitstop.customwidgets.PriceDisplayer
+               android:id="@+id/contribute_main_price_displayer_nat"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal" 
+		        android:paddingTop="5dp"
+		        cfont:editable="true"
+		        cfont:digits="5"
+				cfont:dialog_title="@string/contribute_main_natural_gas"
+				cfont:changecolor="true"/>      
+           
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:orientation="vertical" >
+           
+        <com.sumbioun.android.pitstop.customwidgets.CustTextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"  
+        	android:gravity="center"  
+	    	android:text="@string/select_flag" 
+	    	android:textSize="12sp"
+	    	android:textColor="@color/opaque_yellow"
+	    	cfont:cust_font="SourceSansPro_Bold"/>
+           
+        <LinearLayout
+            android:id="@+id/contribute_main_flag_group"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:paddingTop="5dp"
+	        android:orientation="horizontal" >
+           
+   			<ImageView
+		        android:src="@drawable/flag_esso"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="5dp"
+		        android:contentDescription="@string/no_description"/>  
+	        <ImageView
+		        android:src="@drawable/flag_br"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="5dp"
+		        android:contentDescription="@string/no_description" />  
+	        <ImageView
+		        android:src="@drawable/flag_ipiranga"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="5dp"
+		        android:contentDescription="@string/no_description"
+		        android:tint="@color/opaque_white" />  
+	        <ImageView
+		        android:src="@drawable/flag_ale"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="5dp"
+		        android:contentDescription="@string/no_description"
+		        android:tint="@color/opaque_white" />  
+	        <ImageView
+		        android:src="@drawable/flag_shell"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="5dp"
+		        android:contentDescription="@string/no_description"
+		        android:tint="@color/opaque_white" />  
+	        <ImageView
+		        android:src="@drawable/flag_texaco"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="5dp"
+		        android:contentDescription="@string/no_description"
+		        android:tint="@color/opaque_white" />  
+	        <ImageView
+		        android:src="@drawable/flag_undefined"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:padding="5dp"
+		        android:contentDescription="@string/no_description"
+		        android:tint="@color/opaque_white" />  
+
+    	</LinearLayout>
+           
+        
+    </LinearLayout>
+    
+
+    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:paddingTop="5dp"
+	        android:orientation="horizontal" >
+        
+	    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+	        android:id="@+id/contribute_main_delete"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"  
+	       	android:layout_weight="1"
+	       	android:drawableTop="@drawable/trash"
+	    	android:text="DELETE" 
+	    	android:textSize="12sp"
+	    	android:gravity="center"
+	    	android:textColor="@color/opaque_yellow"
+	    	cfont:cust_font="SourceSansPro_Semibold"/>
+	    
+	    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+	        android:id="@+id/contribute_main_submit"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"  
+	       	android:layout_weight="1"
+	       	android:drawableTop="@drawable/skip"
+	    	android:text="@string/universal_next" 
+	    	android:textSize="12sp"
+	    	android:gravity="center"
+	    	android:textColor="@color/opaque_yellow"
+	    	cfont:cust_font="SourceSansPro_Semibold"/>
+	    
+    
+    </LinearLayout>
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+        android:id="@+id/contribute_main_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+        android:gravity="center" 
+        android:paddingTop="10dp"
+    	android:textSize="12sp"
+    	android:textColor="@color/opaque_white"
+    	cfont:cust_font="SourceSansPro_Semibold"/>
+    
+
+    
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/asphalt_small" >
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+       	android:paddingTop="10dp"
+       	android:paddingRight="70dp"
+       	android:paddingLeft="70dp"
+       	android:gravity="center"  
+    	android:text="@string/contribute_rating_hint" 
+    	android:textSize="12sp"
+    	android:textColor="@color/opaque_yellow"
+    	cfont:cust_font="SourceSansPro_Bold"/>
+    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+       	android:paddingTop="20dp"
+       	android:gravity="center"  
+    	android:text="@string/contribute_rating_quality" 
+    	android:textSize="12sp"
+    	android:textColor="@color/opaque_yellow"
+    	cfont:cust_font="SourceSansPro_Semibold"/>
+	    
+    
+    <com.sumbioun.android.pitstop.customwidgets.StarGroup
+	    android:id="@+id/contribute_rating_quality"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:gravity="center"
+	    android:paddingTop="5dp" 
+	    cfont:star_editable="true"/>
+	
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+       	android:paddingTop="20dp"
+       	android:gravity="center"  
+    	android:text="@string/contribute_rating_speed" 
+    	android:textSize="12sp"
+    	android:textColor="@color/opaque_yellow"
+    	cfont:cust_font="SourceSansPro_Semibold"/>
+    
+    <com.sumbioun.android.pitstop.customwidgets.StarGroup
+        android:id="@+id/contribute_rating_speed"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:gravity="center"
+	    android:paddingTop="5dp" 
+	    cfont:star_editable="true"/>
+	
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"  
+       	android:paddingTop="20dp"
+       	android:gravity="center"  
+    	android:text="@string/contribute_rating_treatment" 
+    	android:textSize="12sp"
+    	android:textColor="@color/opaque_yellow"
+    	cfont:cust_font="SourceSansPro_Semibold"/>
+    
+    <com.sumbioun.android.pitstop.customwidgets.StarGroup
+        android:id="@+id/contribute_rating_treatment"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" 
+	    android:gravity="center"
+	    android:paddingTop="5dp" 
+	    cfont:star_editable="true"/>
+	
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+        android:id="@+id/contribute_rating_submit"
+  	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:paddingTop="15dp"
+	    android:drawableTop="@drawable/skip"
+       	android:text="@string/universal_next"
+       	android:textSize="12sp"      	
+       	android:textColor="@color/opaque_yellow"  
+	    cfont:cust_font="SourceSansPro_Semibold"/> 
+		    
+    <com.sumbioun.android.pitstop.customwidgets.CustTextView
+        android:id="@+id/contribute_rating_address"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"  
+	    android:paddingTop="10dp"
+		android:textSize="12sp"
+	 	android:textColor="@color/opaque_white"
+	 	android:gravity="center" 
+	 	cfont:cust_font="SourceSansPro_Semibold"/>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/asphalt_small">
+    
+	<com.sumbioun.android.pitstop.customwidgets.CustTextView
+  	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+       	android:paddingTop="5dp"
+       	android:gravity="center"  
+       	android:text="@string/contribute_extra_info"
+       	android:textSize="12sp"      	
+       	android:textColor="@color/opaque_yellow"  
+	    cfont:cust_font="SourceSansPro_Bold"/>
+	
+	<ListView
+        android:id="@+id/contribute_extra_list"
+        android:layout_width="match_parent"
+        android:layout_height="290dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:divider="@drawable/line_horizontal_cropped" />
+	
+	<RelativeLayout
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content" 
+    	android:paddingTop="10dp"
+    	android:paddingRight="70dp" 
+        android:paddingLeft="70dp">
+	        
+    	<com.sumbioun.android.pitstop.customwidgets.CustTextView
+    	    android:id="@+id/contribute_extra_submit"
+	  	    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+	       	android:layout_centerHorizontal="true"  
+	       	android:gravity="center"
+	       	android:drawableTop="@drawable/main_contribute"
+	       	android:text="@string/universal_submit"
+	       	android:textSize="12sp"      	
+	       	android:textColor="@color/opaque_yellow"  
+		    cfont:cust_font="SourceSansPro_Semibold"/>  
+    
+    	<!--  <com.sumbioun.android.pitstop.customwidgets.CustTextView
+    	    android:id="@+id/contribute_extra_skip"
+	  	    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentRight="true" 
+		    android:gravity="center"
+		    android:drawableTop="@drawable/skip"
+	       	android:text="@string/skip"
+	       	android:textSize="10dp"      	
+	       	android:textColor="@color/opaque_yellow"  
+		    cfont:cust_font="SourceSansPro_Semibold"/>  -->
+		   	    
+    </RelativeLayout>
+    
+</LinearLayout>

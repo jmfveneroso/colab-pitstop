@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res-auto/com.sumbioun.android.pitstop"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background_asphalt" >
+
+	<fragment 
+	    class="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+	
+	<LinearLayout
+	        android:id="@+id/map_browser_button"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1" 
+	        android:gravity="center"
+	        android:background="@drawable/map_element_border2">
+		    
+		<com.sumbioun.android.pitstop.customwidgets.CustTextView
+            android:id="@+id/map_browser_create_new"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"  
+	        android:layout_gravity="center"
+	        android:gravity="center"  
+	    	android:drawableTop="@drawable/new_gas"
+	    	android:text="@string/map_confirm_location_create_new_gasstation"
+	    	android:textSize="12sp"
+	    	android:textColor="@color/opaque_yellow"
+	        android:padding="5dp" 
+	    	cfont:cust_font="SourceSansPro_Semibold" />
+		
+	</LinearLayout>
+
+</LinearLayout>

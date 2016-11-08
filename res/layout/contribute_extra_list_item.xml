@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sumbioun.android.pitstop.customwidgets.CustTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+    android:id="@+id/label"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"  
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:textSize="16dp"      	
+    android:textColor="@color/opaque_white"  
+    cfont:cust_font="SourceSansPro_Bold" />

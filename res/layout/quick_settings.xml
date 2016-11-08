@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res/com.sumbioun.android.pitstop"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<com.sumbioun.android.pitstop.customwidgets.CustTextView
+	    android:id="@+id/quick_settings_settings_fuel"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"  
+	    android:layout_alignParentLeft="true"
+	    android:gravity="center"  
+		android:drawableTop="@drawable/settings_fuel"
+		android:textSize="12sp"
+		android:textColor="@color/opaque_yellow"
+		cfont:cust_font="SourceSansPro_Semibold"/>
+	
+	<com.sumbioun.android.pitstop.customwidgets.CustTextView
+	    android:id="@+id/quick_settings_settings_radius"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"  
+	    android:layout_centerHorizontal="true"
+	    android:gravity="center"  
+		android:drawableTop="@drawable/settings_radius"
+		android:textSize="12sp"
+		android:textColor="@color/opaque_yellow"
+		cfont:cust_font="SourceSansPro_Semibold"/>
+	
+	<com.sumbioun.android.pitstop.customwidgets.CustTextView
+	    android:id="@+id/quick_settings_settings_mode"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"  
+	    android:layout_alignParentRight="true"
+	    android:gravity="center"  
+		android:drawableTop="@drawable/settings_sort_by"
+		android:textSize="12sp"
+		android:textColor="@color/opaque_yellow"
+		cfont:cust_font="SourceSansPro_Semibold"/>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cfont="http://schemas.android.com/apk/res-auto/com.sumbioun.android.pitstop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/background_asphalt" >
+
+    <fragment 
+	    class="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/map_browser_fuel_type_container"
+	        android:layout_width="65dp"
+		    android:layout_height="65dp" 
+		    android:layout_marginLeft="12dp"
+		    android:layout_marginTop="12dp" 
+		    android:gravity="center"  
+		    android:background="@drawable/map_element_border" >
+        
+	        <com.sumbioun.android.pitstop.customwidgets.CustTextView
+	            android:id="@+id/map_browser_fuel_type_button"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"  
+		        android:layout_gravity="center"
+		        android:gravity="center"  
+		    	android:drawableTop="@drawable/settings_fuel"
+		    	android:textSize="12sp"
+		    	android:textColor="@color/opaque_yellow"
+		        android:padding="5dp" 
+		    	cfont:cust_font="SourceSansPro_Semibold" />
+	        
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/map_browser_progress_bar"
+	        android:layout_width="65dp"
+		    android:layout_height="65dp" 
+		    android:layout_marginLeft="12dp"
+		    android:layout_marginBottom="12dp" 
+		    android:layout_alignParentBottom="true"
+		    android:gravity="center"  
+		    android:background="@drawable/map_element_border" >
+        
+            <ProgressBar 
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_gravity="center"
+			     android:gravity="center"  
+		         android:padding="5dp"
+		         style="@android:style/Widget.ProgressBar.Large.Inverse" />
+	        
+        </LinearLayout>
+      
+    </RelativeLayout>
+	
+</FrameLayout>
